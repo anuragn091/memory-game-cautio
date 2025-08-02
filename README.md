@@ -49,7 +49,10 @@
 Video of the optimisation:
 
 **Before:**
+
 https://github.com/user-attachments/assets/83dea4d1-ae64-4909-80d3-5a04ee0da24b
+
+
 
 **After:**
 
