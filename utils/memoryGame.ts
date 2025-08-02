@@ -8,7 +8,7 @@ export const ICONS = ["🍎", "🚀", "🎵", "🐶", "🌟", "🎲", "🎮", "�
 
 /**
  * Shuffle an array.
- * 
+ *
  * @param array - The array to shuffle.
  * @returns The shuffled array.
  */
@@ -30,7 +30,7 @@ export type Tile = {
 
 /**
  * Calculate the board size based on the number of icons.
- * 
+ *
  * @param iconCount - The number of icons.
  * @returns The board size.
  */
@@ -73,8 +73,8 @@ export function createBoard(): Tile[] {
 
 /**
  * check if the icon of first tile and second tile match
- * @param a 
- * @param b 
+ * @param a
+ * @param b
  * @returns boolean
  */
 export function checkMatch(a: Tile, b: Tile): boolean {

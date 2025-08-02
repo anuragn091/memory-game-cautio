@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useState, useEffect, useMemo, memo } from 'react';
-import { themeClasses, getConditionalClasses } from '../../utils/themeClasses';
+import { useState, useEffect, useMemo } from "react";
+import { themeClasses, getConditionalClasses } from "../../utils/themeClasses";
 
 type Props = {
   isActive: boolean;
@@ -9,7 +9,7 @@ type Props = {
   className?: string;
 };
 
-export default function Timer({ isActive, darkMode, className = '' }: Props) {
+export default function Timer({ isActive, darkMode, className = "" }: Props) {
   const [elapsed, setElapsed] = useState(0);
 
   useEffect(() => {
@@ -25,14 +25,20 @@ export default function Timer({ isActive, darkMode, className = '' }: Props) {
 
   // Memoize formatted time to prevent unnecessary recalculations
   const formattedTime = useMemo(() => {
-    const minutes = String(Math.floor(elapsed / 60)).padStart(2, '0');
-    const seconds = String(elapsed % 60).padStart(2, '0');
+    const minutes = String(Math.floor(elapsed / 60)).padStart(2, "0");
+    const seconds = String(elapsed % 60).padStart(2, "0");
     return `${minutes}:${seconds}`;
   }, [elapsed]);
 
   return (
-    <span className={`font-mono text-sm ${getConditionalClasses(darkMode, themeClasses.text.primary.light, themeClasses.text.primary.dark)} ${className}`}>
+    <span
+      className={`font-mono text-sm ${getConditionalClasses(
+        darkMode,
+        themeClasses.text.primary.light,
+        themeClasses.text.primary.dark
+      )} ${className}`}
+    >
       Time: {formattedTime}
     </span>
   );
-} 
+}
