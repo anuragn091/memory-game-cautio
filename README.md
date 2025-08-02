@@ -46,6 +46,17 @@
 - - ✅ Stable function references with zero dependencies
 - - ✅ Custom comparison functions for precise control
 
+Video of the optimisation:
+
+**Before:**
+https://github.com/user-attachments/assets/83dea4d1-ae64-4909-80d3-5a04ee0da24b
+
+**After:**
+
+https://github.com/user-attachments/assets/ec73325b-5d90-4446-90c2-ecbca864300d
+
+
+
 ## 📊 Application Structure
 ```
  components/MemoryGame/
